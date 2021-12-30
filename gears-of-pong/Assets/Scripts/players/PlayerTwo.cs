@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-public class PlayerOne : MonoBehaviour
+public class PlayerTwo : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Vector2 velocity = new Vector2(0f, 10f);
@@ -25,11 +25,11 @@ public class PlayerOne : MonoBehaviour
 
     private void checkInput()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             _direction = new Vector2(0f, 10f);
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.L))
         {
             _direction = new Vector2(0f, -10f);
         } else 
